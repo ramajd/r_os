@@ -11,6 +11,8 @@ use r_os::println;
 pub extern "C" fn _start() -> ! {
     println!("Hello World!");
 
+    r_os::init();
+
     #[cfg(test)]
     test_main();
 
